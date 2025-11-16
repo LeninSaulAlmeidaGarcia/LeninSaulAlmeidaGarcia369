@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.html">
+    <title>Contacto</title>
+</head>
+<body>
+<section id="contacto">
+    <h2>Contacto</h2>
+    <form>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required> <!-- Campo de nombre, requerido -->
+        <br>
+
+        <label for="telefono">Telefono:</label>
+        <input type="tel" id="telefono" name="telefono" required> <!-- Campo de teléfono, requerido -->
+        <br>
+
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required> <!-- Campo de correo, requerido -->
+        <br>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" required> <!-- Campo de edad, requerido con mínimo 0 -->
+        <br>
+
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios"></textarea> <!-- Comentarios, no requerido -->
+        <br>
+
+        <button type="submit">Enviar</button> <!-- Botón de envío -->
+    </form>
+</section>
+</body>
+<html>

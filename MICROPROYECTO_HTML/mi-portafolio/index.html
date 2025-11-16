@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="atributos/estilo.css">
+    <title>Mi Página Personal</title>
+</head>
+<body>
+ <!-- Encabezado con nombre y lema -->
+<header>
+    <h1>Lenin Almeida</h1>
+    <p>¡Una nueva innovacion y vision en  desarrollo web!</p>
+    <img src="atributos/avatar.png" alt="Avatar de Lenin Almeida" width="100">
+</header>
+<!-- Menú de navegación -->
+<nav>
+    <a href="atributos/Mi Perfil.html" target="_blank">Sobre mí</a>
+    <a href="atributos/Intereses.html" target="_blank">Intereses</a>
+    <a href="atributos/Habilidades.html" target="_blank">Habilidades</a>
+    <a href="atributos/Contacto.html" target="_blank">Contacto</a>
+</nav>
+<!-- Sección Sobre mí -->
+<section id="sobremi">
+    <h2>Sobre mí</h2>
+    <p>Soy un <strong>desarrollador web</strong> apasionado por el <em>diseño</em> y la <mark>tecnología</mark>. Mi meta es crear aplicaciones web intuitivas y efectivas.</p>
+</section>
+<!-- Sección de intereses -->
+<section id="intereses">
+    <h2>Intereses</h2>
+    <ul>
+        <li>Programación</li>
+        <li>Diseño Gráfico</li>
+        <li>Música</li>
+        <li>Viajar</li>
+    </ul>
+</section>
+<!-- Sección de habilidades -->
+<section id="habilidades">
+    <h2>Habilidades</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Habilidad</th>
+                <th>Nivel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>HTML</td>
+                <td>Avanzado</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Intermedio</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Básico</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total de habilidades: 3</td> <!-- Pie de tabla -->
+            </tr>
+        </tfoot>
+    </table>
+</section>
+
+<section>
+    <h2>Multimedia</h2>
+    <!-- Audio de presentación -->
+    <div class="audio-contenedor">
+    <audio controls>   
+        <source src="atributos/Personal.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+    </div> 
+    <br>
+<!-- Video de presentación -->
+ <div class="video-contenedor">
+    <video controls width="800">  
+        <source src="atributos/Personal.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+    </div>
+</section>
+<!-- Formulario de contacto -->
+<section id="contacto">
+    <h2>Contacto</h2>
+    <form>   <!-- Nombre, requerido -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+        <br>
+ <!-- Correo, requerido -->
+        <label for="correo">Correo:</label>
+        <input type="email" id="correo" name="correo" required>
+        <br>
+<!-- Edad, requerido con mínimo 0 -->
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="0" required>
+        <br>
+ <!-- Selección de género, requerido -->
+        <label for="genero">Género:</label>
+        <select id="genero" name="genero" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="otro">Otro</option>
+        </select>
+        <br>
+<!-- Intereses, requerido -->
+        <br>
+        <label for="intereses">Intereses:</label>
+        <textarea id="intereses" name="intereses" required></textarea>
+        <br>
+ <!-- Comentarios, no requerido -->
+        <label for="comentarios">Comentarios:</label>
+        <textarea id="comentarios" name="comentarios"></textarea>
+        <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+<!-- Pie de página -->
+<footer>
+    <p>&copy; 2025 Lenin Almeida. Todos los derechos reservados.</p>
+    <p>
+        <a href=https://www.facebook.com/profile.php?id=100063710260271&ref=py_c&locale=es_LA#"">Facebook</a> | 
+        <a href="https://x.com/home">Twitter</a> | 
+        <a href="https://www.tiktok.com/@lenin.saul.almeid">Instagram</a>  |
+        <a href="https://www.tiktok.com/@lenin.saul.almeid">Tiktok</a>    |
+        <a href="https://ec.linkedin.com/in/lenin-saul-almeida-garcia-550894213">LinkedIn</a>
+    </p>
+</footer>
+
+</body>
+</html>
